@@ -1,7 +1,7 @@
 // Copyright 2016 Alexandr
 
 #include "Stack.h"
-#include <gtest.h>
+#include "gtest.h"
 
 TEST(StackOnList, can_fill_correctly) {
     Stack<int> stk;
