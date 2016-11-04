@@ -8,6 +8,6 @@ file(GLOB headers "*.h*")
 
 if(UNIX) 
 	add_executable(../bin/stackexe  "${sources}" "${headers}")
-else(UNIX)
+else()
 	add_executable(stackexe  "${sources}" "${headers}")
-endif(UNIX)
+endif()
