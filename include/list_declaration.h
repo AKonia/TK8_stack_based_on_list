@@ -1,18 +1,18 @@
-#ifndef LIST_DECLARATION_HPP
-#define LIST_DECLARATION_HPP
+// Copyright 2016 Alexandr
+
+#ifndef INCLUDE_LIST_DECLARATION_H_
+#define INCLUDE_LIST_DECLARATION_H_
 
 template<typename ListDataType>
-class List
-{
-protected:
-    struct Node
-    {
+class List {
+ protected:
+    struct Node {
         ListDataType value;
         Node * next;
     };
     Node * currentNode;
     unsigned int listSize;
-public:
+ public:
     List();
     List(const List & rhs);
     ~List();
@@ -25,7 +25,5 @@ public:
 
     void push(const ListDataType value, int indx = -1);
     void removeElem(unsigned int indx);
-
-
 };
-#endif // LIST_DECLARATION_HPP
+#endif  // INCLUDE_LIST_DECLARATION_H_

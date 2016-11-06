@@ -1,3 +1,5 @@
+// Copyright 2016 Alexandr
+
 #ifndef INCLUDE_LIST_H_
 #define INCLUDE_LIST_H_
 
@@ -81,8 +83,7 @@ void List<ListDataType>::push(const ListDataType value, int indx) {
 }
 
 template <typename ListDataType>
-void List<ListDataType>::removeElem(unsigned int indx)
-{
+void List<ListDataType>::removeElem(unsigned int indx) {
     if (indx >= listSize || listSize == 0)
         throw "Illigal indexing";
     Node * willBeRemoved = currentNode;
@@ -111,6 +112,6 @@ bool List<ListDataType>::isEmpty() {
     return false;
 }
 
-#endif  // INCLUDE_LIST_HPP_
+#endif  // INCLUDE_LIST_H_
 
 
